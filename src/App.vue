@@ -5,8 +5,23 @@
       <router-link to="/about">About</router-link>
     </div>
     <router-view/>
+    <Editor></Editor>
+    <Demo></Demo>
   </div>
 </template>
+
+<script>
+import Editor from './views/Editor.vue'
+import Demo from './views/Demo1.vue'
+
+export default {
+  components:{
+    Editor,
+    Demo
+  }
+}
+</script>
+
 
 <style lang="scss">
 #app {
